@@ -133,9 +133,9 @@ a{
     background-position: center center;
 }
 
-.swiper-wrapper{
+/* .swiper-wrapper{
 
-}
+} */
 
 .swiper-pagination-bullet{
     width: 120px;
@@ -158,6 +158,98 @@ a{
     background-color: #fff;
 }
 /* MAIN */
+
+/* SECTION 2 WHY LEASE */
+.why-lease{
+    padding: 150px 0;
+}
+
+.section-title{
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.why-lease__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.why-lease__item-img{
+    margin-bottom: 30px;
+}
+
+.why-lease__item-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-lease__item-text{
+    text-align: left;
+}
+/* SECTION 2 WHY LEASE */
+
+
+/* SECTION 3 HOW DOES */
+.how-does{
+    padding-bottom: 150px;
+}
+
+.how__does-inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how__does-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how__does-list{
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+
+.how__does-item{
+    /* убираем стандартную нумерацию */
+    list-style-type: none;
+    width: 270px;
+    position: relative;
+    margin-left: auto;
+    box-sizing: content-box;
+    padding: 19px 0 19px 240px;
+    min-height: 63px;
+}
+
+.how__does-item + .how__does-item{
+    /* начиная со второго */
+    margin-top: 40px;
+}
+
+.how__does-item::before{
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    background-color: #06F;
+    font-size: 48px;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* SECTION 3 HOW DOES */
 
 
 /* FOOTER */
