@@ -48,6 +48,12 @@ a{
 
 .header-main{
     background-color: transparent;
+    /* уровень слоя выше для накладывания на фон main-img.jpg */
+    position: absolute;
+    z-index: 2;
+    /* для обнуления позиции контента после position и z-index */
+    left: 0;
+    right: 0;
 }
 
 .header__inner{
@@ -74,6 +80,82 @@ a{
 .main{
     flex-grow: 1;
     /* для закрепления футера к низу */
+}
+
+.top{
+    color: #fff;
+    text-align: center;
+    /* изменить padding-top на 250px после position и z-index (3)*/
+    padding-top: 250px;
+    padding-bottom: 50px;
+    /* уровень слоя выше для накладывания на фон main-img.jpg (1) */
+    position: absolute;
+    z-index: 2;
+    /* для обнуления позиции контента после position и z-index (2) */
+    left: 0;
+    right: 0;
+}
+
+.title{
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top__link{
+    background-color: #151515;
+    padding: 23px;
+    /* 23px для резерва на случай дополнительных */
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.swiper::after{
+    /* накладывается затемнение main-img.jpg */
+    content: '';
+    background: rgba(21, 21, 21, .3);
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.swiper-slide{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper-wrapper{
+
+}
+
+.swiper-pagination-bullet{
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 30px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 50px;
+}
+
+.swiper-pagination-bullet-active{
+    height: 6px;
+    background-color: #fff;
 }
 /* MAIN */
 
