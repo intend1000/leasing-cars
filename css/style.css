@@ -50,7 +50,7 @@ a{
     background-color: transparent;
     /* уровень слоя выше для накладывания на фон main-img.jpg */
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     /* для обнуления позиции контента после position и z-index */
     left: 0;
     right: 0;
@@ -272,6 +272,34 @@ a{
 }
 /* SECTION 4 VIDEO */
 
+/* SECTION 5 IMPORTANT */
+.important{
+    padding-bottom: 150px;
+}
+
+.important__item{
+    max-width: 270px;
+}
+
+.important__title{
+    margin-bottom: 20px;
+}
+
+.important__text{
+    max-width: 580px;
+    margin: 0 auto 50px;
+}
+
+.important-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.important__item-img{
+    margin-bottom: 20px;
+}
+/* SECTION 5 IMPORTANT */
+
 
 /* FOOTER */
 .footer{
@@ -320,3 +348,71 @@ a{
     column-gap: 40px;
 }
 /* FOOTER */
+
+
+
+/* CONTACTS */
+.contacts{
+    padding: 100px 0 150px;
+}
+
+.contacts__title{
+    margin-bottom: 20px;
+}
+
+form{
+    width: 580px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__textarea{
+    width: 100%;
+    resize: none;
+    padding: 28px 20px;
+    height: 290px;
+    border: 1px solid #0066FF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.form__input{
+    width: 270px;
+    padding: 18px 20px;
+    display: inline-block;
+    border: 1px solid #0066FF;
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #000;
+    opacity: .5;
+}
+
+.form__btn{
+    text-transform: uppercase;
+    color: #fff;
+    background: #151515;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 13px 61px;
+    margin: 0 auto;
+}
+/* CONTACTS */
